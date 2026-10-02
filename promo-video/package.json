@@ -1,0 +1,21 @@
+{
+  "name": "promo-video",
+  "version": "1.0.0",
+  "description": "Bolt Food Ukraine Sales Team August MBR Promo Video",
+  "scripts": {
+    "start": "npx remotion studio",
+    "render": "npx remotion render BoltFoodPromo out/promo.mp4 --codec=h264",
+    "still": "npx remotion still BoltFoodPromo out/still.png"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/cli": "^4.0.532",
+    "@remotion/media-utils": "^4.0.532",
+    "@remotion/renderer": "^4.0.532",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.532"
+  }
+}
