@@ -7,6 +7,8 @@ import {
   Easing,
   AbsoluteFill,
   Sequence,
+  Audio,
+  staticFile,
 } from 'remotion';
 
 // ─── Brand tokens ───────────────────────────────────────────────────────────
@@ -1198,6 +1200,9 @@ export const BoltFoodPromo: React.FC = () => {
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         * { box-sizing: border-box; }
       `}</style>
+
+      {/* Background music track */}
+      <Audio src={staticFile('track.mp3')} volume={0.85} />
 
       {visible(S.hook,    S.intro)   && <SceneHook         frame={localFrame(S.hook)}     />}
       {visible(S.intro,   S.deals)   && <SceneIntro        frame={localFrame(S.intro)}    />}
